@@ -1,0 +1,50 @@
+:root{
+    --bg-primary: #bb5c5c;
+    --bg-secondary : #f55b5b;
+}
+
+input[type="email"] {
+            border: 2px solid red;
+        }
+
+button[data-role="primary"] {
+    border: 2px solid #007bff;
+}
+
+[data-status="error"] {
+    color: red; 
+}
+
+
+table {
+        width: 80%;
+        border-collapse: collapse;
+        margin: 20px auto;
+        font-family: sans-serif;
+    }
+
+th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border: 1px solid #ddd;
+}
+
+    thead tr {
+        color: var(--color-text-light); 
+    }
+
+    
+
+tbody tr:nth-child(odd) {
+        background-color: var(--bg-primary);
+}
+
+tbody tr:nth-child(even) {
+        background-color: var(--bg-secondary);
+}
+    
+li:nth-child(3n){
+    background-color: var(--bg-secondary);
+}
+
+
