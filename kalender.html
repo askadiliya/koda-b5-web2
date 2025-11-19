@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kalender Bulan November">
+    <title>Kalender November</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        .calendar-container {
+            width: 90%;
+            margin: 40px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        .calendar-header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+        }
+
+        .weekdays, .calendar-days {
+            width: 100%;
+        }
+
+        .weekdays > div, .day-box, .empty-day {
+            display: inline-block;
+            width: calc(100% / 7); 
+            height: 60px;
+            text-align: center;
+            padding: 10px 0; 
+            line-height: 40px; 
+            font-size: 1.2em;
+            vertical-align: top; 
+        }
+    
+        .weekdays > div, .day-box, .empty-day {
+            float: left;
+        }
+
+        .weekdays > div {
+            font-weight: bold;
+            background-color: #e9ecef;
+            border-bottom: 1px solid #ccc;
+            color: #333;
+        }
+        .weekdays > div:first-child {
+            color: red;
+        }
+
+        .day-box {
+            border: 1px solid #eee;
+            border-top: none;
+            border-left: none;
+            color: #333;
+            transition: background-color 0.2s;
+            cursor: pointer;
+            text-align: center; 
+            padding-left: 5px; 
+            line-height: normal; 
+            padding-top: 5px;
+            height: 65px; 
+        }
+
+        .day-box:hover {
+            background-color: #e0f7fa;
+        }
+        
+
+        .holiday {
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="calendar-container">
+
+        
+        <div class="weekdays">
+            <div>Min</div>
+            <div>Sen</div>
+            <div>Sel</div>
+            <div>Rab</div>
+            <div>Kam</div>
+            <div>Jum</div>
+            <div>Sab</div>
+        </div>
+        
+        <div class="calendar-days">
+            <div class="day-box holiday">1</div>
+            <div class="day-box">2</div>
+            <div class="day-box">3</div>
+            <div class="day-box">4</div>
+            <div class="day-box">5</div>
+            <div class="day-box">6</div>
+            <div class="day-box">7</div>
+
+            <div class="day-box holiday">8</div>
+            <div class="day-box">9</div>
+            <div class="day-box">10</div>
+            <div class="day-box">11</div>
+            <div class="day-box">12</div>
+            <div class="day-box">13</div>
+            <div class="day-box">14</div>
+
+            <div class="day-box holiday">15</div>
+            <div class="day-box">16</div>
+            <div class="day-box">17</div>
+            <div class="day-box">18</div>
+            <div class="day-box">19</div>
+            <div class="day-box">20</div>
+            <div class="day-box">21</div>
+
+            <div class="day-box holiday">22</div>
+            <div class="day-box">23</div>
+            <div class="day-box">24</div>
+            <div class="day-box">25</div>
+            <div class="day-box">26</div>
+            <div class="day-box">27</div>
+            <div class="day-box">28</div>
+
+            <div class="day-box holiday">29</div>
+            <div class="day-box">30</div>
+            
+            <div class="empty-day"></div>
+            <div class="empty-day"></div>
+            <div class="empty-day"></div>
+            <div class="empty-day"></div>
+            <div class="empty-day"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
